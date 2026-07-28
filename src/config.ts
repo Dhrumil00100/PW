@@ -1,12 +1,11 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
-        title: "AI & Full-Stack Developer",
+        name: "Dhrumil",
+        fullName: "Dhrumil Solanki",        title: "AI & Full-Stack Developer",
         description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
     },
     social: {
-        github: "red1-for-hek",
+        github: "Dhrumil00100/PW",
         email: "dhrumilsolanki100@gmail.com",
         location: "Bangladesh"
     },
@@ -168,7 +167,7 @@ export const config = {
     ],
     contact: {
         email: "dhrumilsolanki100@gmail.com",
-        github: "https://github.com/red1-for-hek",
+        github: "https://github.com/Dhrumil00100/PW",
         linkedin: "https://linkedin.com/in/red1-for-hek",
         twitter: "https://x.com/red_1_ul",
         facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
