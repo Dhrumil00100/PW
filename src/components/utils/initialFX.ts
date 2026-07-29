@@ -14,6 +14,20 @@ export function initialFX() {
     delay: 1,
   });
 
+  if (window.innerWidth <= 768) {
+    gsap.fromTo(
+      [".landing-intro", ".landing-info", ".header", ".icons-section", ".nav-fade"],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1.2,
+        ease: "power1.inOut",
+        stagger: 0.1,
+      }
+    );
+    return;
+  }
+
   const selectors = [".landing-info h3", ".landing-intro h2", ".landing-intro h1"];
   const elements = selectors.flatMap(selector => Array.from(document.querySelectorAll(selector)));
   var landingText = new TextSplitter(elements, {
@@ -82,6 +96,9 @@ export function initialFX() {
 }
 
 function LoopText(Text1: TextSplitter, Text2: TextSplitter) {
+  if (!Text1.chars.length || !Text2.chars.length) {
+    return;
+  }
   var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
   const delay = 4;
   const delay2 = delay * 2 + 1;
