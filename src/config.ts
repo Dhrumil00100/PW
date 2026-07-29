@@ -170,8 +170,7 @@ export const config = {
         github: "https://github.com/Dhrumil00100",
         linkedin: "https://linkedin.com/in/red1-for-hek",
         twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official"
     },
     skills: {
         develop: {
