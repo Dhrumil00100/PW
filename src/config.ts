@@ -5,7 +5,7 @@ export const config = {
         description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
     },
     social: {
-        github: "Dhrumil00100/PW",
+        github: "https://github.com/Dhrumil00100",
         email: "dhrumilsolanki100@gmail.com",
         location: "Bangladesh"
     },
@@ -167,7 +167,7 @@ export const config = {
     ],
     contact: {
         email: "dhrumilsolanki100@gmail.com",
-        github: "https://github.com/Dhrumil00100/PW",
+        github: "https://github.com/Dhrumil00100",
         linkedin: "https://linkedin.com/in/red1-for-hek",
         twitter: "https://x.com/red_1_ul",
         facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
