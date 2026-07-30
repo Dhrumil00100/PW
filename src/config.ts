@@ -1,24 +1,24 @@
 export const config = {
     developer: {
         name: "Dhrumil",
-        fullName: "Dhrumil Solanki",        title: "AI & Full-Stack Developer",
+        fullName: "Dhrumil Solanki", title: "AI & Full-Stack Developer",
         description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
     },
     social: {
         github: "https://github.com/Dhrumil00100",
         email: "dhrumilsolanki100@gmail.com",
-        location: "Bangladesh"
+        location: "India"
     },
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description: "I am building the skills today to create the technology of tomorrow. I am an Information Technology student specializing in Artificial Intelligence, Full Stack Development, and Automation. I enjoy building software that combines intelligent systems with modern web technologies to solve practical business and everyday challenges. My journey is driven by continuous learning, disciplined execution, and a commitment to creating products with lasting value. My goal is to build AI powered platforms and SaaS solutions that reach thousands of users and make a meaningful impact."
     },
     experiences: [
         {
             position: "Learning Something New",
             company: "Self-Development",
             period: "2025 - Present",
-            location: "Bangladesh",
+            location: "India",
             description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
             responsibilities: [
                 "Researching cutting-edge AI and ML technologies",
@@ -32,7 +32,7 @@ export const config = {
             position: "AI Engineer",
             company: "Freelance & Projects",
             period: "2025",
-            location: "Bangladesh",
+            location: "India",
             description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
             responsibilities: [
                 "Building AI-powered chatbots and conversational agents",
@@ -46,7 +46,7 @@ export const config = {
             position: "Full-Stack Developer",
             company: "Freelance & Projects",
             period: "2024",
-            location: "Bangladesh",
+            location: "India",
             description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
             responsibilities: [
                 "Developing full-stack web applications using React and Node.js",
@@ -60,7 +60,7 @@ export const config = {
             position: "Python Developer",
             company: "Self-Taught & Projects",
             period: "2023",
-            location: "Bangladesh",
+            location: "India",
             description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
             responsibilities: [
                 "Learning Python programming and core concepts",
@@ -74,7 +74,7 @@ export const config = {
             position: "Graphic Designer",
             company: "Freelance",
             period: "2022",
-            location: "Bangladesh",
+            location: "India",
             description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
             responsibilities: [
                 "Designing logos and brand identity materials",
@@ -88,7 +88,7 @@ export const config = {
             position: "Microsoft Office",
             company: "Begin Learning",
             period: "2021",
-            location: "Bangladesh",
+            location: "India",
             description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
             responsibilities: [
                 "Learning Microsoft Word, Excel, and PowerPoint",
@@ -106,6 +106,7 @@ export const config = {
             category: "AI / LLM",
             technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
             image: "/images/drishti.png",
+            github: "https://github.com/Dhrumil00100",
             description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali."
         },
         {
@@ -114,6 +115,7 @@ export const config = {
             category: "Blockchain",
             technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
             image: "/images/votechain.png",
+            github: "https://github.com/Dhrumil00100",
             description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking."
         },
         {
@@ -122,6 +124,7 @@ export const config = {
             category: "IoT / Hardware",
             technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
             image: "/images/eie.png",
+            github: "https://github.com/Dhrumil00100",
             description: "A practical circuit-based IoT system utilizing Arduino to predict earthquakes before they strike. Integrates hardware sensors for real-time seismic detection and impact estimation."
         },
         {
@@ -130,6 +133,7 @@ export const config = {
             category: "Full Stack",
             technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
             image: "/images/gamekroy.png",
+            github: "https://github.com/Dhrumil00100",
             description: "A full-featured e-commerce platform for gaming products. Includes user authentication, product catalog, shopping cart, secure payments, order tracking, and admin dashboard."
         },
         {
@@ -138,6 +142,7 @@ export const config = {
             category: "AI / Game Engine",
             technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
             image: "/images/redxchess.png",
+            github: "https://github.com/Dhrumil00100",
             description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
         },
         {
@@ -146,6 +151,7 @@ export const config = {
             category: "AI / ML",
             technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
             image: "/images/floodhub.png",
+            github: "https://github.com/Dhrumil00100",
             description: "A flood prediction model specifically designed for Bangladesh's river systems. Analyzes weather patterns, water levels, and historical data to provide accurate flood forecasts and alerts."
         },
         {
@@ -154,6 +160,7 @@ export const config = {
             category: "AI Assistant",
             technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
             image: "/images/phoenix.png",
+            github: "https://github.com/Dhrumil00100",
             description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience."
         },
         {
@@ -162,7 +169,17 @@ export const config = {
             category: "Security / Android",
             technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
             image: "/images/hektools.png",
+            github: "https://github.com/Dhrumil00100",
             description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes."
+        },
+        {
+            id: 9,
+            title: "Portfolio Website",
+            category: "Full Stack",
+            technologies: "React, TypeScript, GSAP, Vite, CSS",
+            image: "/images/portfolio.png",
+            github: "https://github.com/Dhrumil00100/PW",
+            description: "A modern, animated personal portfolio website built with React and TypeScript. Features smooth GSAP animations, responsive design, dark theme, and showcases projects, skills, and experience."
         }
     ],
     contact: {
