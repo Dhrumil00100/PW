@@ -1,57 +1,54 @@
-# 🚀 3D Developer Portfolio Website (React + TypeScript + Three.js)
+# 🚀 Dhrumil Solanki - 3D Developer Portfolio Website
 
-[![3D portfolio preview (click to watch video)](./Screenshot_2026-04-08_22-10-00.png)](./screen-capture%20(13).webm)
-
-A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
-
-If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
-
-> Live preview: https://www.redoyanulhaque.me/
+A premium, interactive **3D Developer Portfolio Website** built with **React**, **TypeScript**, **Three.js / React Three Fiber**, **GSAP**, and **WebGL**.
 
 ---
 
-## ✨ Highlights
+## ✨ Features
 
-- **3D / WebGL experience** powered by **Three.js**
-- Smooth animations with **GSAP**
-- Modern **React + TypeScript** codebase
-- Fast, responsive UI (desktop + mobile)
-- Designed for developers, engineers, programmers, and creators
+- **3D / WebGL Interactive Experience** powered by **Three.js** & **React Three Fiber**
+- Smooth, high-performance scroll animations driven by **GSAP** & **Lenis**
+- Clean and modern **React + TypeScript** structure
+- Responsive layouts for seamless viewing on both Desktop and Mobile
+- Personal sections showcasing:
+  - **About Me:** Focused on Artificial Intelligence, Full-Stack Development, and Automation
+  - **Projects:** Interactive list including AI models, Blockchain, IoT, and Web applications
+  - **Experience:** Timeline tracking career and self-development milestones
+  - **Tech Stack:** Visual representations of technologies mastered
 
 ---
 
 ## 🧰 Tech Stack
 
-- **React**
-- **TypeScript**
-- **Three.js / WebGL**
-- **GSAP**
-- **HTML / CSS / JavaScript**
+- **Frontend:** React, TypeScript, Vite, CSS
+- **3D Graphics:** Three.js, React Three Fiber (R3F), Drei, Rapier (Physics)
+- **Animations:** GSAP (GreenSock Animation Platform)
+- **Analytics & Speed Insights:** Vercel Web Analytics & Speed Insights
 
 ---
 
 ## 🚀 Getting Started
 
-### 1) Clone
+### 1) Clone the Repository
 
 ```bash
-git clone https://github.com/red1-for-hek/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/Dhrumil00100/PW.git
+cd PW
 ```
 
-### 2) Install
+### 2) Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3) Run locally
+### 3) Run Locally
 
 ```bash
 npm run dev
 ```
 
-### 4) Build
+### 4) Production Build
 
 ```bash
 npm run build
@@ -59,41 +56,25 @@ npm run build
 
 ---
 
-## 🧩 Customize (Quick Guide)
+## 🧩 Structure & Customization
 
-Typical things you’ll want to update:
-
-- **Your name + hero section text**
-- **Projects list**
-- **Social links** (GitHub, LinkedIn, email)
-- **SEO meta title/description**
-
----
-
-## ⭐ Support
-
-If you found this useful:
-
-- Please **star** the repository (it helps a lot)
-- Share it with a friend who needs a portfolio template
-- Sponsor via the **Sponsor** button on GitHub (if available in your region)
+The core configuration is located in [config.ts](file:///c:/Users/11/Desktop/portfolio-website-main/src/config.ts). You can update this file to customize:
+- Developer details (Name, title, biography)
+- Social & contact links
+- Work experiences list
+- Projects list & their descriptions
+- Skills and technical tools
 
 ---
 
 ## 🤝 Connect
 
-- LinkedIn: https://www.linkedin.com/in/red1-for-hek/
-
----
-
-## 🏷️ Recommended GitHub Topics (add in repo settings)
-
-Add these topics to improve GitHub search visibility:
-
-`portfolio` `developer-portfolio` `portfolio-website` `portfolio-template` `3d-portfolio` `react` `typescript` `threejs` `webgl` `gsap` `frontend` `vite`
+- **GitHub:** [github.com/Dhrumil00100](https://github.com/Dhrumil00100)
+- **Email:** [dhrumilsolanki100@gmail.com](mailto:dhrumilsolanki100@gmail.com)
+- **LinkedIn:** [linkedin.com/in/red1-for-hek](https://linkedin.com/in/red1-for-hek)
 
 ---
 
 ## 🪪 License
 
-This project is open source and available under the **MIT License**. See [LICENSE](LICENSE).
+This project is open-source and available under the **MIT License**.
