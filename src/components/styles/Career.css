@@ -2,286 +2,283 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  place-items: center;
-  justify-content: center;
   position: relative;
-  opacity: 1;
-  height: auto;
-  margin: auto;
-  margin-bottom: 250px;
-  padding: 120px 0px;
+  width: 100%;
+  padding: 120px 0;
+  margin-bottom: 300px;
+}
+
+.career-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .career-section h2 {
-  font-size: 70px;
-  line-height: 70px;
-  font-weight: 400;
+  font-size: 64px;
+  font-weight: 500;
   text-align: center;
-  background: linear-gradient(0deg, #7f40ff, #ffffff);
+  margin-bottom: 100px;
+  background: linear-gradient(180deg, #ffffff 0%, #a5a5a5 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  margin-top: 50px;
-  margin-bottom: 20px;
 }
 
-.career-subtitle {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 300;
-  color: #a0a0a0;
-  margin-bottom: 70px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.career-section h2>span {
+.career-section h2 span {
   font-family: "Geist", sans-serif;
   font-weight: 300;
+  background: linear-gradient(0deg, #7f40ff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.career-info {
+/* Roadmap Structure */
+.roadmap-container {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0px auto;
 }
 
-.career-info-box {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.career-info-box p {
-  width: 40%;
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0;
-  line-height: 20px;
-}
-
-.career-info-in {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-.career-info h3 {
-  font-size: 48px;
-  margin: 0;
-  font-weight: 500;
-  line-height: 45px;
-}
-
-.career-info h4 {
-  font-size: 33px;
-  line-height: 30px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.career-info h5 {
-  font-weight: 400;
-  letter-spacing: 0.7px;
-  font-size: 20px;
-  text-transform: capitalize;
-  margin: 10px 0px;
-  color: var(--accentColor);
-}
-
-.career-timeline {
+.roadmap-timeline {
   position: absolute;
-  top: -50px;
+  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 3px;
-  height: 100%;
-  background-image: linear-gradient(to top,
-      #aa42ff 20%,
-      var(--accentColor) 50%,
-      transparent 95%);
-  max-height: 0%;
+  width: 2px;
+  z-index: 1;
 }
 
-.career-dot {
+.roadmap-line-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.roadmap-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(180deg, transparent 0%, #aa42ff 100%);
+  transition: height 0.1s ease-out;
+}
+
+.roadmap-glow-dot {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: #aa42ff;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  box-shadow: 0px 0px 5px 2px #d29bff, 0px 0px 15px 8px #d097ff,
-    0px 0px 110px 20px #f2c0ff;
-  animation: timeline 0.8s linear infinite forwards;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #aa42ff;
+  box-shadow: 0 0 10px 2px rgba(170, 66, 255, 0.5),
+              0 0 20px 5px rgba(170, 66, 255, 0.3),
+              0 0 40px 10px rgba(170, 66, 255, 0.1);
 }
 
-@keyframes timeline {
+.roadmap-milestones {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  z-index: 2;
+}
 
-  10%,
-  20%,
-  50%,
-  70%,
-  90% {
-    box-shadow: 0px 0px 5px 2px #d29bff;
+.milestone-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.milestone-wrapper.right {
+  justify-content: flex-end;
+}
+
+.milestone-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(170, 66, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aa42ff;
+  font-size: 24px;
+  backdrop-filter: blur(10px);
+  z-index: 3;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(170, 66, 255, 0.1);
+}
+
+.milestone-wrapper:hover .milestone-dot {
+  border-color: #aa42ff;
+  box-shadow: 0 0 20px rgba(170, 66, 255, 0.4);
+  transform: translate(-50%, -50%) scale(1.1);
+  color: #fff;
+}
+
+.milestone-card {
+  width: calc(50% - 60px);
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.milestone-wrapper.left .milestone-card {
+  text-align: right;
+  transform: translateX(-40px) translateY(40px);
+}
+
+.milestone-wrapper.right .milestone-card {
+  text-align: left;
+  transform: translateX(40px) translateY(40px);
+}
+
+/* Visibility classes triggered by IntersectionObserver */
+.milestone-card.visible {
+  opacity: 1;
+  transform: translate(0, 0) !important;
+}
+
+/* Mouse hover glow effect */
+.milestone-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(170, 66, 255, 0.08), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.milestone-card:hover::before {
+  opacity: 1;
+}
+
+.milestone-card:hover {
+  border-color: rgba(170, 66, 255, 0.3);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 30px rgba(170, 66, 255, 0.05);
+}
+
+.milestone-stage {
+  font-family: "Geist", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accentColor);
+  margin-bottom: 12px;
+}
+
+.milestone-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.milestone-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #a0a0a0;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .roadmap-timeline {
+    left: 20px;
+    transform: none;
+  }
+  
+  .roadmap-glow-dot {
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 
-  10%,
-  30%,
-  0%,
-  100%,
-  64%,
-  80% {
-    box-shadow: 0px 0px 5px 2px #d29bff, 0px 0px 15px 5px #d097ff,
-      0px 0px 110px 20px #f2c0ff;
+  .milestone-wrapper, .milestone-wrapper.right {
+    justify-content: flex-start;
+  }
+
+  .milestone-dot {
+    left: 20px;
+    transform: translate(-50%, -50%);
+  }
+
+  .milestone-wrapper:hover .milestone-dot {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  .milestone-card {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    text-align: left !important;
+  }
+  
+  .milestone-wrapper.left .milestone-card,
+  .milestone-wrapper.right .milestone-card {
+    transform: translateY(40px);
   }
 }
 
-@keyframes timeline2 {
-  0% {
-    box-shadow: 0px 0px 5px 2px #d29bff;
+@media (max-width: 600px) {
+  .career-section {
+    padding: 80px 0;
   }
 
-  100% {
-    box-shadow: 0px 0px 5px 2px #d29bff, 0px 0px 15px 5px #d097ff,
-      0px 0px 110px 20px #f2c0ff;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .career-section h2 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  .career-info h4 {
-    font-size: 22px;
-    line-height: 24px;
-    width: 180px;
-  }
-
-  .career-info h5 {
-    font-size: 17px;
-  }
-
-  .career-info h3 {
-    font-size: 40px;
-  }
-
-  .career-info-box p {
-    font-size: 14px;
-  }
-
-  .career-info-in {
-    width: 45%;
-    gap: 20px;
-  }
-
-  .career-info-box p {
-    width: 45%;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 767px) {
   .career-section h2 {
     font-size: 42px;
-    line-height: 44px;
+    margin-bottom: 60px;
+    line-height: 1.1;
   }
-
-  .career-info h3 {
-    font-size: 36px;
+  
+  .milestone-title {
+    font-size: 22px;
   }
-
-  .career-info h4 {
-    font-size: 20px;
+  
+  .milestone-desc {
+    font-size: 14px;
   }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .career-section h2 {
-    font-size: 48px;
-    line-height: 48px;
+  
+  .milestone-card {
+    padding: 24px;
+    width: calc(100% - 60px);
+    margin-left: 60px;
   }
-
-  .career-info h3 {
-    font-size: 38px;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  .career-section {
-    padding: 70px 0px;
-    padding-top: 100px;
-    margin-top: 0px;
-    margin-bottom: 0;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .career-info-box {
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 70px;
-  }
-
-  .career-info-in,
-  .career-info-box p {
-    width: 100%;
-    padding-left: 10%;
-    box-sizing: border-box;
-  }
-
-  .career-timeline {
-    left: 0%;
-  }
-
-  .career-container {
-    width: calc(100% - 25px);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .career-info {
-    margin: 0;
-  }
-
-  .career-section h2 {
-    width: 100%;
-    font-size: 45px;
-    line-height: 45px;
-    margin-top: 0px;
-  }
-
-  .career-subtitle {
-    font-size: 16px;
-    margin-bottom: 50px;
-  }
-
-  .career-info-in {
-    gap: 0px;
-  }
-
-  .career-info h3 {
-    font-size: 33px;
-  }
-
-  .career-info-in,
-  .career-info-box p {
-    padding-left: 5%;
-  }
-
-  .career-section {
-    padding-top: 90px;
-    margin-top: 0px;
-
-    align-items: start;
-    place-items: inherit;
-    justify-content: left;
+  
+  .roadmap-milestones {
+    gap: 60px;
   }
 }
