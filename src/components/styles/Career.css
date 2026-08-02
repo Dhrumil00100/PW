@@ -23,7 +23,18 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   margin-top: 50px;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
+}
+
+.career-subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  color: #a0a0a0;
+  margin-bottom: 70px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .career-section h2>span {
@@ -245,6 +256,11 @@
     font-size: 45px;
     line-height: 45px;
     margin-top: 0px;
+  }
+
+  .career-subtitle {
+    font-size: 16px;
+    margin-bottom: 50px;
   }
 
   .career-info-in {
