@@ -62,7 +62,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          MY <span>Project </span>
         </h2>
         <div className="work-flex">
           {config.projects.slice(0, 5).map((project, index) => (
