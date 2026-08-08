@@ -71,7 +71,7 @@ The core configuration is located in [config.ts](file:///c:/Users/11/Desktop/por
 
 - **GitHub:** [github.com/Dhrumil00100](https://github.com/Dhrumil00100)
 - **Email:** [dhrumilsolanki100@gmail.com](mailto:dhrumilsolanki100@gmail.com)
-- **LinkedIn:** [linkedin.com/in/red1-for-hek](https://linkedin.com/in/red1-for-hek)
+- **LinkedIn:** [linkedin.com/in/dhrumil-solanki-321587375](https://www.linkedin.com/in/dhrumil-solanki-321587375?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ---
 

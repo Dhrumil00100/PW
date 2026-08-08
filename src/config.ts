@@ -131,7 +131,7 @@ export const config = {
     contact: {
         email: "dhrumilsolanki100@gmail.com",
         github: "https://github.com/Dhrumil00100",
-        linkedin: "https://linkedin.com/in/red1-for-hek"
+        linkedin: "https://www.linkedin.com/in/dhrumil-solanki-321587375?utm_source=share_via&utm_content=profile&utm_medium=member_android"
     },
     skills: {
         develop: {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./styles/Career.css";
 import { config } from "../config";
 import { LuGraduationCap, LuCode, LuBot, LuRocket, LuGlobe } from "react-icons/lu";
