@@ -48,6 +48,17 @@ export const config = {
     projects: [
         {
             id: 1,
+            title: "BOIP",
+            subtitle: "Business Operating Intelligence Platform",
+            positioning: "The Operating System for Small & Medium Businesses.",
+            category: "AI / Full-Stack / SaaS",
+            technologies: "Next.js, FastAPI, PostgreSQL, Redis, Neo4j, MinIO, pgvector",
+            image: "/images/boip.png",
+            github: "https://github.com/Dhrumil00100",
+            description: "A unified business platform designed to connect business data, documents, operations, and workflows in one intelligent workspace — creating the foundation for better visibility, automation, and AI-powered decision making."
+        },
+        {
+            id: 2,
             title: "Drishti",
             category: "AI / LLM",
             technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
@@ -56,7 +67,7 @@ export const config = {
             description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali."
         },
         {
-            id: 2,
+            id: 3,
             title: "VoteChain",
             category: "Blockchain",
             technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
@@ -65,7 +76,7 @@ export const config = {
             description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking."
         },
         {
-            id: 3,
+            id: 4,
             title: "EIE - Earthquake Impact Estimator",
             category: "IoT / Hardware",
             technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
@@ -74,7 +85,7 @@ export const config = {
             description: "A practical circuit-based IoT system utilizing Arduino to predict earthquakes before they strike. Integrates hardware sensors for real-time seismic detection and impact estimation."
         },
         {
-            id: 4,
+            id: 5,
             title: "GameKroy",
             category: "Full Stack",
             technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
@@ -83,7 +94,7 @@ export const config = {
             description: "A full-featured e-commerce platform for gaming products. Includes user authentication, product catalog, shopping cart, secure payments, order tracking, and admin dashboard."
         },
         {
-            id: 5,
+            id: 6,
             title: "RedxChess",
             category: "AI / Game Engine",
             technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
@@ -92,7 +103,7 @@ export const config = {
             description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
         },
         {
-            id: 6,
+            id: 7,
             title: "Floodhub",
             category: "AI / ML",
             technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
@@ -101,7 +112,7 @@ export const config = {
             description: "A flood prediction model specifically designed for Bangladesh's river systems. Analyzes weather patterns, water levels, and historical data to provide accurate flood forecasts and alerts."
         },
         {
-            id: 7,
+            id: 8,
             title: "Phoenix",
             category: "AI Assistant",
             technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
@@ -110,7 +121,7 @@ export const config = {
             description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience."
         },
         {
-            id: 8,
+            id: 9,
             title: "HekTools",
             category: "Security / Android",
             technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
@@ -119,7 +130,7 @@ export const config = {
             description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes."
         },
         {
-            id: 9,
+            id: 10,
             title: "Portfolio Website",
             category: "Full Stack",
             technologies: "React, TypeScript, GSAP, Vite, CSS",
