@@ -59,12 +59,14 @@ export const config = {
         },
         {
             id: 2,
-            title: "Drishti",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/drishti.png",
-            github: "https://github.com/Dhrumil00100",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali."
+            title: "CHRONA",
+            subtitle: "Personal Intelligence Platform",
+            positioning: "Your life. Understood.",
+            category: "AI / Personal Intelligence / SaaS",
+            technologies: "Next.js, Python, FastAPI, PostgreSQL, pgvector, React, Tailwind CSS",
+            image: "/images/chrona.png",
+            github: "https://github.com/Dhrumil00100/CHRONA",
+            description: "A Personal Intelligence Platform designed to connect fragmented personal information into a continuously evolving context layer, creating the foundation for AI-powered memory, understanding, planning, and assistance."
         },
         {
             id: 3,

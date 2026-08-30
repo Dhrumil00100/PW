@@ -30,7 +30,7 @@ const MyWorks = () => {
     { id: "Other", label: "IoT & Other" }
   ];
 
-  const featuredTitles = ["BOIP", "Drishti", "RedxChess", "VoteChain", "GameKroy"];
+  const featuredTitles = ["BOIP", "CHRONA", "RedxChess", "VoteChain", "GameKroy"];
 
   // Category mapping function matching logic
   const matchesFilter = (projectCategory: string, filter: string): boolean => {
@@ -376,6 +376,66 @@ const MyWorks = () => {
                       <div><strong>Backend:</strong> FastAPI, Python</div>
                       <div><strong>Database:</strong> PostgreSQL, pgvector, Neo4j</div>
                       <div><strong>Infrastructure:</strong> Redis, MinIO, Docker</div>
+                    </div>
+                  </div>
+                </>
+              ) : selectedProject.title === "CHRONA" ? (
+                <>
+                  <div className="modal-section">
+                    <h4>Overview</h4>
+                    <p>
+                      CHRONA explores a new category of software: Personal Intelligence. Instead of keeping information isolated across different applications, CHRONA aims to create a unified personal context layer that connects the information a person chooses to provide.
+                    </p>
+                    <p>
+                      The long-term vision is to build a continuously evolving Life Graph and Personal Brain that can help users remember, understand, plan, decide, and eventually take authorized actions.
+                    </p>
+                  </div>
+
+                  <div className="modal-section">
+                    <h4>Problem Statement</h4>
+                    <p>
+                      Human digital life is fragmented across disconnected systems (email, cloud drives, photos, calendars, notes, banking apps, receipts) that store information but do not understand the relationships between it. Each system contains only part of the user's context.
+                    </p>
+                    <p>
+                      CHRONA explores how these disconnected pieces can become one connected personal intelligence layer.
+                    </p>
+                  </div>
+
+                  <div className="modal-section">
+                    <h4>Vision</h4>
+                    <p className="highlight-box">
+                      "Build the world's most trusted Personal Intelligence Platform — an intelligent layer that helps every person understand, manage, and act on their digital life."
+                    </p>
+                  </div>
+
+                  <div className="modal-grid-two">
+                    <div className="modal-section">
+                      <h4>Product Model</h4>
+                      <ul className="modal-list">
+                        <li><strong>Data:</strong> User's digital information</li>
+                        <li><strong>Memory:</strong> Unified personal context</li>
+                        <li><strong>Life Graph:</strong> Relationships between entities</li>
+                        <li><strong>Personal Brain:</strong> Contextual reasoning</li>
+                        <li><strong>Assistant:</strong> Chat, voice & actions</li>
+                      </ul>
+                    </div>
+                    <div className="modal-section">
+                      <h4>Product Evolution</h4>
+                      <ul className="modal-list future-list">
+                        <li><strong>Remember:</strong> Unified Context Layer</li>
+                        <li><strong>Understand:</strong> Relationship Mapping</li>
+                        <li><strong>Help & Notice:</strong> Proactive Insights</li>
+                        <li><strong>Act & Platform:</strong> Autonomous Execution</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="modal-section">
+                    <h4>Technology Stack</h4>
+                    <div className="tech-stack-details">
+                      <div><strong>Frontend:</strong> Next.js, React, Tailwind CSS</div>
+                      <div><strong>Backend:</strong> Python, FastAPI</div>
+                      <div><strong>Database & Vector:</strong> PostgreSQL, pgvector</div>
                     </div>
                   </div>
                 </>
