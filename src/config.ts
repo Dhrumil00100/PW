@@ -54,7 +54,7 @@ export const config = {
             category: "AI / Full-Stack / SaaS",
             technologies: "Next.js, FastAPI, PostgreSQL, Redis, Neo4j, MinIO, pgvector, Docker",
             image: "/images/boip.png",
-            github: "https://github.com/Dhrumil00100",
+            github: "https://github.com/Dhrumil00100/BOIP",
             description: "BOIP is a business operating platform designed to bring scattered business data, documents, and operations into one unified workspace — creating a foundation for better business visibility, workflow management, automation, and future AI-powered intelligence."
         },
         {
