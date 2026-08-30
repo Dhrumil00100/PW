@@ -26,7 +26,6 @@ const MyWorks = () => {
     { id: "All", label: "All" },
     { id: "AI", label: "AI & ML" },
     { id: "Web", label: "Web & Full-Stack" },
-    { id: "Security", label: "Security" },
     { id: "Other", label: "IoT & Other" }
   ];
 

@@ -115,24 +115,6 @@ export const config = {
         },
         {
             id: 8,
-            title: "Phoenix",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/phoenix.png",
-            github: "https://github.com/Dhrumil00100",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience."
-        },
-        {
-            id: 9,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            github: "https://github.com/Dhrumil00100",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes."
-        },
-        {
-            id: 10,
             title: "Portfolio Website",
             category: "Full Stack",
             technologies: "React, TypeScript, GSAP, Vite, CSS",
