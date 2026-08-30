@@ -63,10 +63,10 @@ export const config = {
             subtitle: "Personal Intelligence Platform",
             positioning: "Your life. Understood.",
             category: "AI / Personal Intelligence / SaaS",
-            technologies: "Next.js, Python, FastAPI, PostgreSQL, pgvector, React, Tailwind CSS",
+            technologies: "Python, FastAPI, Neo4j, React, Tailwind, OpenAI",
             image: "/images/chrona.png",
             github: "https://github.com/Dhrumil00100/CHRONA",
-            description: "A Personal Intelligence Platform designed to connect fragmented personal information into a continuously evolving context layer, creating the foundation for AI-powered memory, understanding, planning, and assistance."
+            description: "CHRONA connects your documents, events, people, assets, and activities into a unified personal context. It transforms fragmented information into structured memory and relationships, creating the foundation for AI-powered personal intelligence."
         },
         {
             id: 3,
