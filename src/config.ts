@@ -52,10 +52,10 @@ export const config = {
             subtitle: "Business Operating Intelligence Platform",
             positioning: "The Operating System for Small & Medium Businesses.",
             category: "AI / Full-Stack / SaaS",
-            technologies: "Next.js, FastAPI, PostgreSQL, Redis, Neo4j, MinIO, pgvector",
+            technologies: "Next.js, FastAPI, PostgreSQL, Redis, Neo4j, MinIO, pgvector, Docker",
             image: "/images/boip.png",
             github: "https://github.com/Dhrumil00100",
-            description: "A unified business platform designed to connect business data, documents, operations, and workflows in one intelligent workspace — creating the foundation for better visibility, automation, and AI-powered decision making."
+            description: "BOIP is a business operating platform designed to bring scattered business data, documents, and operations into one unified workspace — creating a foundation for better business visibility, workflow management, automation, and future AI-powered intelligence."
         },
         {
             id: 2,
