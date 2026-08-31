@@ -70,6 +70,17 @@ export const config = {
         },
         {
             id: 3,
+            title: "KULT SALON",
+            subtitle: "Luxury Salon Digital Experience",
+            positioning: "A premium digital experience designed for a modern luxury salon brand.",
+            category: "Web Design / Full-Stack / Business",
+            technologies: "React, TypeScript, Tailwind CSS, UI/UX, Responsive",
+            image: "/images/kult_salon.png",
+            github: "https://github.com/Dhrumil00100",
+            description: "A premium, modern salon website designed to create a strong digital brand presence while delivering a smooth and intuitive experience across desktop and mobile devices. Focuses on elegant visual design, responsive development, clear service discovery, and conversion-focused user experience."
+        },
+        {
+            id: 4,
             title: "VoteChain",
             category: "Blockchain",
             technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
@@ -78,7 +89,7 @@ export const config = {
             description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking."
         },
         {
-            id: 4,
+            id: 5,
             title: "EIE - Earthquake Impact Estimator",
             category: "IoT / Hardware",
             technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
@@ -87,7 +98,7 @@ export const config = {
             description: "A practical circuit-based IoT system utilizing Arduino to predict earthquakes before they strike. Integrates hardware sensors for real-time seismic detection and impact estimation."
         },
         {
-            id: 5,
+            id: 6,
             title: "GameKroy",
             category: "Full Stack",
             technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
@@ -96,7 +107,7 @@ export const config = {
             description: "A full-featured e-commerce platform for gaming products. Includes user authentication, product catalog, shopping cart, secure payments, order tracking, and admin dashboard."
         },
         {
-            id: 6,
+            id: 7,
             title: "RedxChess",
             category: "AI / Game Engine",
             technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
@@ -105,7 +116,7 @@ export const config = {
             description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
         },
         {
-            id: 7,
+            id: 8,
             title: "Floodhub",
             category: "AI / ML",
             technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
@@ -114,7 +125,7 @@ export const config = {
             description: "A flood prediction model specifically designed for Bangladesh's river systems. Analyzes weather patterns, water levels, and historical data to provide accurate flood forecasts and alerts."
         },
         {
-            id: 8,
+            id: 9,
             title: "Portfolio Website",
             category: "Full Stack",
             technologies: "React, TypeScript, GSAP, Vite, CSS",

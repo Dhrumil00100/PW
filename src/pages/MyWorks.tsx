@@ -29,7 +29,7 @@ const MyWorks = () => {
     { id: "Other", label: "IoT & Other" }
   ];
 
-  const featuredTitles = ["BOIP", "CHRONA", "RedxChess", "VoteChain", "GameKroy"];
+  const featuredTitles = ["BOIP", "CHRONA", "KULT SALON", "VoteChain", "GameKroy"];
 
   // Category mapping function matching logic
   const matchesFilter = (projectCategory: string, filter: string): boolean => {
@@ -435,6 +435,36 @@ const MyWorks = () => {
                       <div><strong>Frontend:</strong> Next.js, React, Tailwind CSS</div>
                       <div><strong>Backend:</strong> Python, FastAPI</div>
                       <div><strong>Database & Vector:</strong> PostgreSQL, pgvector</div>
+                    </div>
+                  </div>
+                </>
+              ) : selectedProject.title === "KULT SALON" ? (
+                <>
+                  <div className="modal-section">
+                    <h4>Overview</h4>
+                    <p>
+                      KULT SALON is a premium salon website designed to create a modern, elegant, and conversion-focused digital experience.
+                    </p>
+                    <p>
+                      The project focuses on translating a luxury salon brand into a high-quality web experience where users can easily explore services, understand the brand, and navigate towards booking or contacting the salon.
+                    </p>
+                  </div>
+
+                  <div className="modal-section">
+                    <h4>Core Focus Areas</h4>
+                    <ul className="modal-list">
+                      <li><strong>Premium UI/UX:</strong> Luxury brand identity with clean typography and gold accents</li>
+                      <li><strong>Responsive Design:</strong> Seamless user experience across desktop, tablet, and mobile</li>
+                      <li><strong>Service Discovery:</strong> Intuitive presentation of salon offerings and treatments</li>
+                      <li><strong>Conversion-Focused:</strong> Direct booking pathways and touch-friendly CTA buttons</li>
+                    </ul>
+                  </div>
+
+                  <div className="modal-section">
+                    <h4>Technology Stack</h4>
+                    <div className="tech-stack-details">
+                      <div><strong>Frontend:</strong> React, TypeScript, Tailwind CSS</div>
+                      <div><strong>Design System:</strong> Premium Dark Theme, Responsive UI/UX</div>
                     </div>
                   </div>
                 </>
