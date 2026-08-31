@@ -108,15 +108,6 @@ export const config = {
         },
         {
             id: 7,
-            title: "RedxChess",
-            category: "AI / Game Engine",
-            technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/redxchess.png",
-            github: "https://github.com/Dhrumil00100",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
-        },
-        {
-            id: 8,
             title: "Floodhub",
             category: "AI / ML",
             technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
@@ -125,7 +116,7 @@ export const config = {
             description: "A flood prediction model specifically designed for Bangladesh's river systems. Analyzes weather patterns, water levels, and historical data to provide accurate flood forecasts and alerts."
         },
         {
-            id: 9,
+            id: 8,
             title: "Portfolio Website",
             category: "Full Stack",
             technologies: "React, TypeScript, GSAP, Vite, CSS",
