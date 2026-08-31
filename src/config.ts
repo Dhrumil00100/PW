@@ -72,12 +72,12 @@ export const config = {
             id: 3,
             title: "KULT SALON",
             subtitle: "Luxury Salon Digital Experience",
-            positioning: "A premium digital experience designed for a modern luxury salon brand.",
+            positioning: "BOLD. LUXURIOUS. UNAPOLOGETIC.",
             category: "Web Design / Full-Stack / Business",
-            technologies: "React, TypeScript, Tailwind CSS, UI/UX, Responsive",
+            technologies: "HTML5, CSS3, JavaScript, Bootstrap, UI/UX",
             image: "/images/kult_salon.png",
             github: "https://github.com/Dhrumil00100",
-            description: "A premium, modern salon website designed to create a strong digital brand presence while delivering a smooth and intuitive experience across desktop and mobile devices. Focuses on elegant visual design, responsive development, clear service discovery, and conversion-focused user experience."
+            description: "A premium salon website designed to reflect luxury, style, and confidence. Clean, bold, and conversion-focused digital experience combining elegant visual design, responsive development, clear service discovery, and 08+ pages of interactive salon content."
         },
         {
             id: 4,

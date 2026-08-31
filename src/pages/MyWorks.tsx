@@ -443,28 +443,36 @@ const MyWorks = () => {
                   <div className="modal-section">
                     <h4>Overview</h4>
                     <p>
-                      KULT SALON is a premium salon website designed to create a modern, elegant, and conversion-focused digital experience.
-                    </p>
-                    <p>
-                      The project focuses on translating a luxury salon brand into a high-quality web experience where users can easily explore services, understand the brand, and navigate towards booking or contacting the salon.
+                      KULT SALON is a premium salon website designed to reflect luxury, style, and confidence. Clean, bold, and conversion-focused digital experience combining elegant visual design, responsive development, clear service discovery, and 08+ pages of interactive salon content.
                     </p>
                   </div>
 
                   <div className="modal-section">
-                    <h4>Core Focus Areas</h4>
+                    <h4>Core Highlights</h4>
                     <ul className="modal-list">
-                      <li><strong>Premium UI/UX:</strong> Luxury brand identity with clean typography and gold accents</li>
-                      <li><strong>Responsive Design:</strong> Seamless user experience across desktop, tablet, and mobile</li>
-                      <li><strong>Service Discovery:</strong> Intuitive presentation of salon offerings and treatments</li>
-                      <li><strong>Conversion-Focused:</strong> Direct booking pathways and touch-friendly CTA buttons</li>
+                      <li><strong>08+ Pages:</strong> Complete salon experience including Services, Gallery, Reviews & Booking</li>
+                      <li><strong>100% Responsive:</strong> Tested across desktop, laptop, tablet, and mobile devices</li>
+                      <li><strong>Fast Performance:</strong> Optimized asset loading, smooth transitions, and high speed</li>
+                      <li><strong>SEO Optimized:</strong> Clean semantic HTML, meta descriptions, and search engine foundations</li>
                     </ul>
                   </div>
 
                   <div className="modal-section">
-                    <h4>Technology Stack</h4>
+                    <h4>Development Process</h4>
+                    <ol className="modal-list">
+                      <li><strong>01 Research:</strong> Understanding the luxury brand identity and target audience</li>
+                      <li><strong>02 UI/UX Design:</strong> Crafted clean, bold, and modern aesthetic with gold/red accents</li>
+                      <li><strong>03 Development:</strong> Built with performance, responsiveness, and component scalability</li>
+                      <li><strong>04 Testing:</strong> Tested for speed, mobile responsiveness, and SEO readiness</li>
+                      <li><strong>05 Launch:</strong> Live digital presence ready to deliver real booking results</li>
+                    </ol>
+                  </div>
+
+                  <div className="modal-section">
+                    <h4>Technologies Used</h4>
                     <div className="tech-stack-details">
-                      <div><strong>Frontend:</strong> React, TypeScript, Tailwind CSS</div>
-                      <div><strong>Design System:</strong> Premium Dark Theme, Responsive UI/UX</div>
+                      <div><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap</div>
+                      <div><strong>Focus:</strong> Responsive Design, UI/UX, Performance Optimization</div>
                     </div>
                   </div>
                 </>
