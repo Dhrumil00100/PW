@@ -69,7 +69,6 @@ const Contact = () => {
     };
 
     try {
-      // First try calling the serverless API endpoint
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -80,54 +79,10 @@ const Contact = () => {
         setSubmitted(true);
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        // Fallback for local Vite dev / direct Telegram notification
-        const token = "8521356018:AAFJOTnJ_bnWMLTRa5YrXdaHahexka5NTTo";
-        const chatId = "7112907770";
-        const text = `📩 *New Portfolio Inquiry!*\n\n👤 *Name:* ${payload.name}\n✉️ *Email:* ${payload.email}\n🏷️ *Subject:* ${payload.subject}\n\n💬 *Message:*\n${payload.message}`;
-
-        const tgRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            chat_id: chatId,
-            text,
-            parse_mode: "Markdown"
-          })
-        });
-
-        if (tgRes.ok) {
-          setSubmitted(true);
-          setFormData({ name: "", email: "", subject: "", message: "" });
-        } else {
-          setSubmitError("Failed to send message. Please try again or email directly.");
-        }
+        setSubmitError("Failed to send message. Please try again later.");
       }
     } catch (err) {
-      // Direct Telegram fallback in case API route is unreachable locally
-      try {
-        const token = "8521356018:AAFJOTnJ_bnWMLTRa5YrXdaHahexka5NTTo";
-        const chatId = "7112907770";
-        const text = `📩 *New Portfolio Inquiry!*\n\n👤 *Name:* ${payload.name}\n✉️ *Email:* ${payload.email}\n🏷️ *Subject:* ${payload.subject}\n\n💬 *Message:*\n${payload.message}`;
-
-        const tgRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            chat_id: chatId,
-            text,
-            parse_mode: "Markdown"
-          })
-        });
-
-        if (tgRes.ok) {
-          setSubmitted(true);
-          setFormData({ name: "", email: "", subject: "", message: "" });
-        } else {
-          setSubmitError("Failed to send message. Please try again.");
-        }
-      } catch (fallbackErr) {
-        setSubmitError("Could not send message. Please check connection.");
-      }
+      setSubmitError("Could not send message. Please check your connection.");
     } finally {
       setIsSubmitting(false);
       setTimeout(() => setSubmitted(false), 5000);

@@ -12,8 +12,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    const token = process.env.TELEGRAM_BOT_TOKEN || '8521356018:AAFJOTnJ_bnWMLTRa5YrXdaHahexka5NTTo';
-    const chatId = process.env.TELEGRAM_CHAT_ID || '7112907770';
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+
+    if (!token || !chatId) {
+      return res.status(500).json({ error: 'Telegram environment variables not configured' });
+    }
 
     const text = `📩 *New Portfolio Inquiry!*\n\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n🏷️ *Subject:* ${subject || 'General Inquiry'}\n\n💬 *Message:*\n${message}`;
 
@@ -33,7 +37,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(500).json({ error: data.description || 'Failed to send Telegram message' });
     }
 
-    return res.status(200).json({ success: true, message: 'Message sent to Telegram' });
+    return res.status(200).json({ success: true, message: 'Message sent successfully' });
   } catch (error: any) {
     return res.status(500).json({ error: error.message || 'Internal server error' });
   }
