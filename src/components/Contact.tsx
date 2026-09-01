@@ -53,16 +53,85 @@ const Contact = () => {
     };
   }, []);
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    const mailtoUrl = `mailto:${config.contact.email}?subject=${encodeURIComponent(formData.subject || "Contact Form Submission")}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
-    window.location.href = mailtoUrl;
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 4000);
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject || "General Inquiry",
+      message: formData.message
+    };
+
+    try {
+      // First try calling the serverless API endpoint
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        // Fallback for local Vite dev / direct Telegram notification
+        const token = "8521356018:AAFJOTnJ_bnWMLTRa5YrXdaHahexka5NTTo";
+        const chatId = "7112907770";
+        const text = `📩 *New Portfolio Inquiry!*\n\n👤 *Name:* ${payload.name}\n✉️ *Email:* ${payload.email}\n🏷️ *Subject:* ${payload.subject}\n\n💬 *Message:*\n${payload.message}`;
+
+        const tgRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text,
+            parse_mode: "Markdown"
+          })
+        });
+
+        if (tgRes.ok) {
+          setSubmitted(true);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        } else {
+          setSubmitError("Failed to send message. Please try again or email directly.");
+        }
+      }
+    } catch (err) {
+      // Direct Telegram fallback in case API route is unreachable locally
+      try {
+        const token = "8521356018:AAFJOTnJ_bnWMLTRa5YrXdaHahexka5NTTo";
+        const chatId = "7112907770";
+        const text = `📩 *New Portfolio Inquiry!*\n\n👤 *Name:* ${payload.name}\n✉️ *Email:* ${payload.email}\n🏷️ *Subject:* ${payload.subject}\n\n💬 *Message:*\n${payload.message}`;
+
+        const tgRes = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text,
+            parse_mode: "Markdown"
+          })
+        });
+
+        if (tgRes.ok) {
+          setSubmitted(true);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        } else {
+          setSubmitError("Failed to send message. Please try again.");
+        }
+      } catch (fallbackErr) {
+        setSubmitError("Could not send message. Please check connection.");
+      }
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => setSubmitted(false), 5000);
+    }
   };
 
   return (
@@ -136,13 +205,30 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="send-message-btn" data-cursor="disable">
-                <LuSend /> Send Message
+              <button 
+                type="submit" 
+                className="send-message-btn" 
+                data-cursor="disable"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  "Sending to Telegram..."
+                ) : (
+                  <>
+                    <LuSend /> Send Message
+                  </>
+                )}
               </button>
 
               {submitted && (
                 <div className="form-success-toast">
-                  Thank you! Opening your email client to send your message.
+                  ✅ Message sent directly to Telegram! Thank you for reaching out.
+                </div>
+              )}
+
+              {submitError && (
+                <div className="form-error-toast" style={{ color: "#ff6b6b", marginTop: "10px", textAlign: "center", fontSize: "14px" }}>
+                  {submitError}
                 </div>
               )}
             </form>
