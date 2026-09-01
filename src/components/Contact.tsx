@@ -212,7 +212,7 @@ const Contact = () => {
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
-                  "Sending to Telegram..."
+                  "Sending..."
                 ) : (
                   <>
                     <LuSend /> Send Message
@@ -222,7 +222,7 @@ const Contact = () => {
 
               {submitted && (
                 <div className="form-success-toast">
-                  ✅ Message sent directly to Telegram! Thank you for reaching out.
+                  Thank you! Your message has been sent successfully.
                 </div>
               )}
 
