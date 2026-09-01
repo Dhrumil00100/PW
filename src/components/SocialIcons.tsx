@@ -9,6 +9,25 @@ import { config } from "../config";
 const SocialIcons = () => {
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
+    if (!social) return;
+
+    // Smoothly hide floating social icons when contact section is reached
+    const handleScroll = () => {
+      const contactElem = document.getElementById("contact");
+      if (contactElem) {
+        const rect = contactElem.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 150) {
+          social.style.opacity = "0";
+          social.style.pointerEvents = "none";
+        } else {
+          social.style.opacity = "1";
+          social.style.pointerEvents = "auto";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     social.querySelectorAll("span").forEach((item) => {
       const elem = item as HTMLElement;
@@ -51,6 +70,10 @@ const SocialIcons = () => {
         elem.removeEventListener("mousemove", onMouseMove);
       };
     });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (

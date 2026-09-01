@@ -127,8 +127,11 @@ export const config = {
     ],
     contact: {
         email: "dhrumilsolanki100@gmail.com",
+        phone: "+91 99099 41547",
+        location: "Ahmedabad, Gujarat, India",
         github: "https://github.com/Dhrumil00100",
-        linkedin: "https://www.linkedin.com/in/dhrumil-solanki-321587375?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        linkedin: "https://www.linkedin.com/in/dhrumil-solanki-321587375?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        resume: "/resume.pdf"
     },
     skills: {
         develop: {

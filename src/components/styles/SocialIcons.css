@@ -16,6 +16,7 @@
   gap: 8px;
   z-index: 999;
   padding: 10px;
+  transition: opacity 0.3s ease;
 }
 .social-icons:hover {
   transition: 0.3s;
