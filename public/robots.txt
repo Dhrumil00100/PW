@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dhrumilsolanki.vercel.app/sitemap.xml
