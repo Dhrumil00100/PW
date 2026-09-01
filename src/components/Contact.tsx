@@ -5,7 +5,6 @@ import {
   LuTag, 
   LuMessageSquare, 
   LuSend, 
-  LuPhone, 
   LuMapPin 
 } from "react-icons/lu";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -163,18 +162,6 @@ const Contact = () => {
                   <span className="info-label">Email</span>
                   <a href={`mailto:${config.contact.email}`} className="info-value-link">
                     {config.contact.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="info-item">
-                <div className="info-icon-badge">
-                  <LuPhone />
-                </div>
-                <div className="info-text">
-                  <span className="info-label">Phone</span>
-                  <a href={`tel:${config.contact.phone}`} className="info-value-link">
-                    {config.contact.phone}
                   </a>
                 </div>
               </div>
