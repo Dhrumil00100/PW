@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "dhrumilsolanki.vercel.app"
+        }
+      ],
+      "destination": "https://dhrumilsolanki.is-a.dev/:path*",
+      "permanent": true
+    }
+  ]
+}
+
