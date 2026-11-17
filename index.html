@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Instant Canonical Domain Redirect -->
+    <!-- Instant Canonical Domain Redirect & Noindex for vercel.app -->
     <script>
       if (window.location.hostname.indexOf('vercel.app') !== -1) {
+        var meta = document.createElement('meta');
+        meta.name = 'robots';
+        meta.content = 'noindex, nofollow';
+        document.head.appendChild(meta);
         window.location.replace('https://dhrumilsolanki.is-a.dev' + window.location.pathname + window.location.search + window.location.hash);
       }
     </script>
